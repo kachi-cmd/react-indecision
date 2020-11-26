@@ -1,16 +1,19 @@
 {
-  "name": "expensify",
+  "name": "indecision",
   "version": "1.0.0",
   "main": "index.js",
   "author": "emmanuel kachi",
   "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
     "build:prod": "webpack --mode=production",
     "dev-server": "webpack serve",
-    "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod"
+    "start":"node server/server.js",
+    "heroku-postbuild":"yarn run build:prod"
   },
   "dependencies": {
     "@babel/cli": "^7.12.1",
